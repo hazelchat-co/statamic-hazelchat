@@ -1,0 +1,22 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+    paths:
+        - src
+    # The same code runs on Statamic 5 and 6. Checks such as
+    # method_exists($addon, 'settings') are always true on one version and
+    # always false on the other, so they are not reported on either; the
+    # settings event class exists only on Statamic 6.
+    ignoreErrors:
+        -
+            identifiers:
+                - function.alreadyNarrowedType
+                - function.impossibleType
+                - identical.alwaysFalse
+                - class.notFound
+            paths:
+                - src/Widget.php
+                - src/ServiceProvider.php
+            reportUnmatched: false

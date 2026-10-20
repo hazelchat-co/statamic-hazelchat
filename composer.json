@@ -1,0 +1,66 @@
+{
+    "name": "hazelchat/statamic-hazelchat",
+    "type": "statamic-addon",
+    "description": "Adds the Hazelchat AI chat agent to Statamic sites from one pasted installation code. It answers visitors from the pages you approve and passes on their enquiries. Needs a Hazelchat account; the Free plan covers one website.",
+    "keywords": ["statamic", "statamic-addon", "chat", "ai", "chat agent", "chatbot", "lead capture", "consent"],
+    "homepage": "https://hazelchat.co/integrations/statamic/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hazelchat",
+            "email": "hello@hazelchat.co",
+            "homepage": "https://hazelchat.co",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "hello@hazelchat.co",
+        "docs": "https://hazelchat.co/integrations/statamic/",
+        "issues": "https://github.com/hazelchat-co/statamic-hazelchat/issues",
+        "source": "https://github.com/hazelchat-co/statamic-hazelchat"
+    },
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^5.0 || ^6.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.0 || ^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hazelchat\\Statamic\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hazelchat\\Statamic\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "pint --test",
+        "analyse": "phpstan analyse --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Hazelchat",
+            "slug": "hazelchat",
+            "description": "Adds the Hazelchat AI chat agent to your site from one pasted installation code."
+        },
+        "laravel": {
+            "providers": [
+                "Hazelchat\\Statamic\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
