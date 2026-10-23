@@ -3,7 +3,8 @@
 Adds your [Hazelchat](https://hazelchat.co/?utm_source=statamic&utm_medium=addon&utm_campaign=readme) AI chat agent to a Statamic site from one pasted installation code. The agent answers visitors from the pages you approved, shows its sources and passes on their enquiries.
 
 - Statamic 5 (PHP 8.2+) and Statamic 6 (PHP 8.3+).
-- Needs a Hazelchat account. The Free plan covers one website and stays free.
+- Needs a Hazelchat account (hosted service). The Free plan covers one website and stays free; paid plans add websites and answers ([pricing](https://hazelchat.co/pricing/?utm_source=statamic&utm_medium=addon&utm_campaign=readme-pricing)).
+- Support: hello@hazelchat.co or [GitHub issues](https://github.com/hazelchat-co/statamic-hazelchat/issues).
 - Hosted service: visitors' browsers load the chat from `app.hazelchat.co`, and Hazelchat processes their questions and any enquiry details they send ([privacy notice](https://hazelchat.co/privacy/), [terms](https://hazelchat.co/terms/)). The addon itself sends nothing.
 
 ## Install
