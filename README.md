@@ -10,7 +10,7 @@ Adds your [Hazelchat](https://hazelchat.co/?utm_source=statamic&utm_medium=addon
 ## Install
 
 1. In Hazelchat, add your website and copy its installation code ([create a free account](https://app.hazelchat.co/signup?utm_source=statamic&utm_medium=addon&utm_campaign=readme-signup)).
-2. `composer require hazelchat/statamic-hazelchat`
+2. `composer require hazelchat/statamic-hazelchat` (also listed on the [Statamic Marketplace](https://statamic.com/addons/hazelchat/hazelchat))
 3. Statamic 6: in the Control Panel, open **Tools → Addons → Hazelchat**, paste the code into **Installation code** and save. Statamic 5 (or if you keep settings in Git): add the key to `.env`:
 
    ```
